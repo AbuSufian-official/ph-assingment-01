@@ -1,8 +1,149 @@
+
+
+/* reusable css property */
+/* ========================= */
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --font:"Inter", sans-serif;
+    --color01: #1D4ED8;
+    --color02: #2563EB;
+    --color03: #0D1B2A;
+    --color04: #93C5FD;
+    --color05: #ffffff;
+    --color06: #000000;
+    --color07: #000000aa;
+
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font) !important;
 }
-h1{
-    color: red;
+ul,ol,li,a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color06);
+}
+.container{
+    max-width: 91vw;
+    margin: auto;
+}
+.section-header{
+    padding: 60px 0px 40px 0px;
+    text-align: center;
+    h2{
+        font-weight: 700;
+        font-size: 56px;
+    }
+}
+.section-area{
+    padding: 40px 0px;
+}
+.btn{
+    background: var(--color02);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--color05);
+    transition: 0.4s ease;
+}
+.btn:hover{
+    color: var(--color02);
+    border: 1px solid #2563EB;
+    background: var(--color05);
+
+
+}
+
+
+/*====== NAVIGATION BAR  ======*/
+/* =========================== */
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.menu ul li a{
+    color: var(--color07);
+    font-weight: 300;
+    font-size: 14px;
+}
+.register-btn button{
+    padding: 9px 30px;
+    background: var(--color01);
+
+}
+
+/* ========  HERO SECTION  ======= */
+/* =============================== */
+.hero-bannar{
+    background: url("./../assets/banner.jpg") no-repeat fixed top / cover;
+    /* background-size: cover; */
+    padding: 110px 0px 80px 0px;
+}
+.hero-content{
+    text-align: center;
+}
+.hero-content *{
+    color: var(--color05);
+}
+.hero-content h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+
+}
+.hero-content p{
+    font-weight: 200;
+
+}
+.hero-btn{
+    margin-top: 210px;
+    padding: 15px 45px;
+}
+
+/* ========  Meet the Speakers section  ======= */
+/* ============================================ */
+.speakers-card-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:20px
+}
+
+.speaker-card{
+    border: 1px solid rgba(0, 0, 0, 0.196);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.speaker-card img{
+    width: 45vw;
+    object-fit: cover;
+}
+.card-text{
+    padding: 20px 20px;
+
+}
+.card-text *{
+    margin-bottom:10px;
+}
+.card-text h6{
+    
+    color: var(--color02);
+}
+.card-text p{
+    color:var(--color07);
+    font-size:14px;
+    
 }
