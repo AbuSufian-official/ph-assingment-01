@@ -601,6 +601,7 @@ a {
     line-height: 1.15;
     margin-bottom: 14px;
     animation: fadeSlideDown 0.7s 0.1s ease both;
+    color:var(--color05)
 }
 
 .section-title span {
