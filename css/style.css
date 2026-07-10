@@ -220,6 +220,10 @@ a {
     margin-bottom: 12px;
     font-size: 14px;
 }
+.card-area-02 ul li::marker {
+    color: var(--color02);
+    
+}
 
 .card-area-02-btn {
     border: 1px solid var(--color02);
@@ -252,4 +256,39 @@ a {
     color: var(--color05);
     background: var(--color02);
 
+}
+
+
+/* ========  Footer area  ======= */
+/* =============================== */
+
+.footer-area{
+    background: var(--color03);
+}
+.social-media ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-media ul li{
+    color: var(--color05);
+
+}
+.footer-content{
+    color: var(--color05) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.Copyright{
+    color: rgba(255, 255, 255, 0.655);
+    font-size: 12px;
+    padding: 5px 0px;
+    text-align: center;
+}
+.social-media ul li a {
+    color: var(--color05) !important;
+    font-size: 20px;
 }
